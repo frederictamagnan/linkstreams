@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>generator module &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="kpi module" href="kpi.html" />
+    <link rel="prev" title="Entropy module" href="Entropy.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="kpi.html" title="kpi module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Entropy.html" title="Entropy module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="generator-module">
+<h1>generator module<a class="headerlink" href="#generator-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-generator">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-generator" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="generator.generator">
+<code class="descclassname">generator.</code><code class="descname">generator</code><span class="sig-paren">(</span><em>matrix=None</em>, <em>size_pop=10</em>, <em>edges=30</em>, <em>mathfunc=&lt;function &lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#generator.generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a linkstream from a matrix of probabilities of interaction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>matrix</strong> &#8211; the matrix of probabilities of interaction</li>
+<li><strong>size_pop</strong> &#8211; number of vertices in the linkstream</li>
+<li><strong>edges</strong> &#8211; number of edges in the linkstream</li>
+<li><strong>mathfunc</strong> &#8211; the mathematical function that will compute the time between two edges</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a linkstream randomly generated</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="generator.matrix_prob_creation">
+<code class="descclassname">generator.</code><code class="descname">matrix_prob_creation</code><span class="sig-paren">(</span><em>size_pop=12</em>, <em>nb_cluster=2</em>, <em>size_cluster_equal=True</em>, <em>high_prob=0.9</em>, <em>low_prob=0.1</em><span class="sig-paren">)</span><a class="headerlink" href="#generator.matrix_prob_creation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a matrix which represents the probability to establish a link between people in a linkstream
+You can choose  an equal repartition in each cluster or a random repartition</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>size_pop</strong> &#8211; the number of people in the population</li>
+<li><strong>nb_cluster</strong> &#8211; the number of clusters</li>
+<li><strong>size_cluster_equal</strong> &#8211; if you want the same number of people in your clusters of not</li>
+<li><strong>high_prob</strong> &#8211; the probability to establish a link between two people in the same cluster.</li>
+<li><strong>low_prob</strong> &#8211; the probability to establish a link between two people in two differents cluster</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="matrix-prob-creation-function">
+<h3>Matrix_prob_creation function<a class="headerlink" href="#matrix-prob-creation-function" title="Permalink to this headline">¶</a></h3>
+<p>this function allows you to create a matrix of probabilites function with a control on various parameters (number of cluster, size of population,etc).</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="n">matrix_1</span><span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">matrix_prob_creation</span><span class="p">(</span><span class="n">size_pop</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">nb_cluster</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">size_cluster_equal</span><span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">high_prob</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">low_prob</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">#the size of the clusters are random</span>
+<span class="n">matrix_2</span><span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">matrix_prob_creation</span><span class="p">(</span><span class="n">size_pop</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">nb_cluster</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">size_cluster_equal</span><span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">high_prob</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">low_prob</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">#the size of the clusters are equal</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generator-function">
+<h3>Generator function<a class="headerlink" href="#generator-function" title="Permalink to this headline">¶</a></h3>
+<p>Then we generate a linkstream of 30 edges from these two matrix</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls1</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">generator</span><span class="p">(</span><span class="n">edges</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">matrix</span><span class="o">=</span><span class="n">matrix_1</span><span class="p">)</span>
+<span class="n">ls2</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">generator</span><span class="p">(</span><span class="n">edges</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">matrix</span><span class="o">=</span><span class="n">matrix_2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can see the results of the two linkstream in a concrete way with a plot representation</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="linkstreams-plot">
+<h3>Linkstreams plot<a class="headerlink" href="#linkstreams-plot" title="Permalink to this headline">¶</a></h3>
+<p>First linkstream with 3 clusters, 20 people, number of people different in each cluster :</p>
+<img alt="_images/generator_ls1.png" src="_images/generator_ls1.png" />
+<p>Second linkstream with 10 clusters, 20 people, number of people equal in each cluster :</p>
+<img alt="_images/generator_ls2.png" src="_images/generator_ls2.png" />
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">generator module</a><ul>
+<li><a class="reference internal" href="#module-generator">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#matrix-prob-creation-function">Matrix_prob_creation function</a></li>
+<li><a class="reference internal" href="#generator-function">Generator function</a></li>
+<li><a class="reference internal" href="#linkstreams-plot">Linkstreams plot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Entropy.html"
+                        title="previous chapter">Entropy module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="kpi.html"
+                        title="next chapter">kpi module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/generator.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="kpi.html" title="kpi module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Entropy.html" title="Entropy module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Entropy module &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="generator module" href="generator.html" />
+    <link rel="prev" title="Profiling_Community_Dynamics.visualization_module package" href="Profiling_Community_Dynamics.visualization_module.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="generator.html" title="generator module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.visualization_module.html" title="Profiling_Community_Dynamics.visualization_module package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entropy-module">
+<h1>Entropy module<a class="headerlink" href="#entropy-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-Entropy">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Entropy" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Entropy.distEntropy">
+<code class="descclassname">Entropy.</code><code class="descname">distEntropy</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start=None</em>, <em>delta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Entropy.distEntropy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the entropy of a Linkstream object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; A linkstream object.</li>
+<li><strong>start</strong> &#8211; The start time.</li>
+<li><strong>delta</strong> &#8211; A time window on which the entropy is calculated.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the entropy of the Linkstream</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Entropy.matrixComp">
+<code class="descclassname">Entropy.</code><code class="descname">matrixComp</code><span class="sig-paren">(</span><em>mat1</em>, <em>mat2</em>, <em>n_estimators=1000</em><span class="sig-paren">)</span><a class="headerlink" href="#Entropy.matrixComp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare two probability matrices</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mat1</strong> &#8211; First probability matrix.</li>
+<li><strong>mat2</strong> &#8211; Second probability matrix.</li>
+<li><strong>n_estimators</strong> &#8211; number of iteratons.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a list containing the mean, std deviation and mediane of the entropy of the linkstream created based on each matrix</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Entropy.meanEntropy">
+<code class="descclassname">Entropy.</code><code class="descname">meanEntropy</code><span class="sig-paren">(</span><em>linkstream</em>, <em>delta</em>, <em>step</em><span class="sig-paren">)</span><a class="headerlink" href="#Entropy.meanEntropy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the mean Entropy of a linkstream</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; A Linkstream object.</li>
+<li><strong>delta</strong> &#8211; The time window on which each entropy is calculated.</li>
+<li><strong>step</strong> &#8211; The progress step.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The mean Entropy of the linkstream</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Entropy.vizualisation_entropy">
+<code class="descclassname">Entropy.</code><code class="descname">vizualisation_entropy</code><span class="sig-paren">(</span><em>linkstream</em>, <em>step=1</em>, <em>startTime=None</em>, <em>endTime=None</em>, <em>delta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Entropy.vizualisation_entropy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vizualize the entropy over time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>linkstream</strong> &#8211; A linkstream object.</li>
+<li><strong>step</strong> &#8211; the time between two samples.</li>
+<li><strong>startTime</strong> &#8211; the start time.</li>
+<li><strong>endTime</strong> &#8211; the end time.</li>
+<li><strong>delta</strong> &#8211; the time window on which the entropy is calculated. If None, the entropy is calculated from the startTime.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="distentropy-function">
+<h3>distEntropy function<a class="headerlink" href="#distentropy-function" title="Permalink to this headline">¶</a></h3>
+<p>distEntropy is a function which compute the linkstream entropy from a start time to an end time. If none given, the function will compute the entropy of the whole linkstream.</p>
+<p>The way to use this function is</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">pcd</span><span class="o">.</span><span class="n">distEntropy</span><span class="p">(</span><span class="n">ls</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>and the result will show you the value of the linkstream entropy.</p>
+<p>You can also use other parameters like start time and delta in order to compute the delta-entropy :</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">pcd</span><span class="o">.</span><span class="n">distEntropy</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">start</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">delta</span> <span class="o">=</span> <span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="matrixcomp-function">
+<h3>matrixComp function<a class="headerlink" href="#matrixcomp-function" title="Permalink to this headline">¶</a></h3>
+<p>matrixComp is a function which compares two probability matrices by their mean, mediane and the standard deviation of the linkstreams associated. 4444</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">mat1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">mat2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">pcd</span><span class="o">.</span><span class="n">matrixComp</span><span class="p">(</span><span class="n">mat1</span><span class="p">,</span><span class="n">mat2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and the result will return you a list containing the mean, std deviation and mediane of the entropy of the linkstream created based on each matrix.</p>
+</div>
+<div class="section" id="meanentropy-function">
+<h3>meanEntropy function<a class="headerlink" href="#meanentropy-function" title="Permalink to this headline">¶</a></h3>
+<p>meanEntropy is a function which compute the mean delta-Entropy of a linkstream :</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">pcd</span><span class="o">.</span><span class="n">meanEntropy</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vizualisation-entropy-function">
+<h3>vizualisation_entropy function<a class="headerlink" href="#vizualisation-entropy-function" title="Permalink to this headline">¶</a></h3>
+<p>vizualisation_entropy is a function which plots the entropy evolution of a linkstream over time.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+
+<span class="n">pcd</span><span class="o">.</span><span class="n">vizualisation_entropy</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/vizualisation_entropy.png" src="_images/vizualisation_entropy.png" />
+<p>So is the case for the delta-entropy :</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+
+<span class="n">pcd</span><span class="o">.</span><span class="n">vizualisation_entropy</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">startTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/vizualisation_delta_entropy.png" src="_images/vizualisation_delta_entropy.png" />
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Entropy module</a><ul>
+<li><a class="reference internal" href="#module-Entropy">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#distentropy-function">distEntropy function</a></li>
+<li><a class="reference internal" href="#matrixcomp-function">matrixComp function</a></li>
+<li><a class="reference internal" href="#meanentropy-function">meanEntropy function</a></li>
+<li><a class="reference internal" href="#vizualisation-entropy-function">vizualisation_entropy function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Profiling_Community_Dynamics.visualization_module.html"
+                        title="previous chapter">Profiling_Community_Dynamics.visualization_module package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="generator.html"
+                        title="next chapter">generator module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Entropy.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="generator.html" title="generator module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.visualization_module.html" title="Profiling_Community_Dynamics.visualization_module package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

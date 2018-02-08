@@ -1,0 +1,11 @@
+generator module
+====================================
+
+Module contents
+---------------
+
+.. automodule:: generator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

@@ -1,0 +1,11 @@
+kpi module
+====================================
+
+Module contents
+---------------
+
+.. automodule:: kpi
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

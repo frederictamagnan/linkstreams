@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>static_graph module &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="kpi module" href="kpi.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="kpi.html" title="kpi module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="static-graph-module">
+<h1>static_graph module<a class="headerlink" href="#static-graph-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-static_graph">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-static_graph" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="static_graph.convert_linkstream_to_networkx">
+<code class="descclassname">static_graph.</code><code class="descname">convert_linkstream_to_networkx</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#static_graph.convert_linkstream_to_networkx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import a slice of a LinkStream Object to a newtworkx graph instance</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; a linkstream instance</li>
+<li><strong>start_time</strong> &#8211; beginning of the slice</li>
+<li><strong>end_time</strong> &#8211; end of the slice</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A LinkStream object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="static_graph.convert_networkx_to_linkstream">
+<code class="descclassname">static_graph.</code><code class="descname">convert_networkx_to_linkstream</code><span class="sig-paren">(</span><em>graph</em>, <em>mathfunc=&lt;function &lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#static_graph.convert_networkx_to_linkstream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import a newtworkx graph instance to LinkStream Object and compute the timestamp with a mathematical function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>graph</strong> &#8211; a graph instance from the lib networkx</li>
+<li><strong>mathfunc</strong> &#8211; a mathematical function to compute the difference between two interactions</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A LinkStream object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="static_graph.ls_flat_plot">
+<code class="descclassname">static_graph.</code><code class="descname">ls_flat_plot</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#static_graph.ls_flat_plot" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Plot a slice of a linkstream as a static graph</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start_time</strong> &#8211; beginning of the slice</li>
+<li><strong>end_time</strong> &#8211; end of the slice</li>
+<li><strong>linkstream</strong> &#8211; linkstream to plot</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nothing but you can plot it with import matplotlib.pyplot as plt  plt.show()</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="static_graph.nx_complex_generator">
+<code class="descclassname">static_graph.</code><code class="descname">nx_complex_generator</code><span class="sig-paren">(</span><em>n=10</em>, <em>p=0.3</em>, <em>edges=30</em>, <em>graph=None</em>, <em>mathfunc=&lt;function &lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#static_graph.nx_complex_generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a linkstream from a networkx graph (the default graph is a erdos renyi graph)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> &#8211; number of vertices</li>
+<li><strong>p</strong> &#8211; probability of interactions taken as parameter in the nxfunc</li>
+<li><strong>edges</strong> &#8211; number of edges</li>
+<li><strong>graph</strong> &#8211; a graph instance from the lib networkx</li>
+<li><strong>mathfunc</strong> &#8211; a mathematical function to compute the difference between two interactions</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A LinkStream object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>These four function are based on the API <a class="reference external" href="https://networkx.github.io/">https://networkx.github.io/</a> created to manipulate static graph.</p>
+<div class="section" id="ls-flat-plot-function">
+<h3>Ls_flat_plot function<a class="headerlink" href="#ls-flat-plot-function" title="Permalink to this headline">¶</a></h3>
+<p>This function draw a flat instance of a linkstream. If a link appears two times during the linkstream, only one link is represented on the flat graph</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="n">matrix_1</span><span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">matrix_prob_creation</span><span class="p">(</span><span class="n">size_pop</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">nb_cluster</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">size_cluster_equal</span><span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">high_prob</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">low_prob</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ls1</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">generator</span><span class="p">(</span><span class="n">edges</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">matrix</span><span class="o">=</span><span class="n">matrix_1</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">ls_flat_plot</span><span class="p">(</span><span class="n">ls1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_lsflatplot.png" src="_images/static_graph_lsflatplot.png" />
+</div>
+<div class="section" id="convert-networkx-to-linkstream-function">
+<h3>Convert_networkx_to_linkstream function<a class="headerlink" href="#convert-networkx-to-linkstream-function" title="Permalink to this headline">¶</a></h3>
+<p>This function convert a networkx instance to a linkstream, by attaching a timestamp randomly to each edge.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">static_graph</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">erdos_renyi_graph</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="c1">#generate an erdos renyi graph with three vertex and a probability of 50% of interaction</span>
+
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">static_graph</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_nx_plot.png" src="_images/static_graph_nx_plot.png" />
+<p>then</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span><span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">convert_networkx_to_linkstream</span><span class="p">(</span><span class="n">static_graph</span><span class="p">,</span><span class="n">mathfunc</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1">#the length between two timestamp is set up to 1</span>
+
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_nx_plot2.png" src="_images/static_graph_nx_plot2.png" />
+</div>
+<div class="section" id="convert-linkstream-to-networkx-function">
+<h3>Convert_linkstream_to_networkx function<a class="headerlink" href="#convert-linkstream-to-networkx-function" title="Permalink to this headline">¶</a></h3>
+<p>This function convert a linkstream to a networkx instance from the list of edges</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">ls</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">generator</span><span class="p">()</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_nx_plot3.png" src="_images/static_graph_nx_plot3.png" />
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">graph</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">convert_linkstream_to_networkx</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_nx_plot4.png" src="_images/static_graph_nx_plot4.png" />
+</div>
+<div class="section" id="nx-complex-generator-function">
+<h3>Nx_complex_generator function<a class="headerlink" href="#nx-complex-generator-function" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>It takes the graph passed in parameter or generates a static erdos renyi graph</li>
+<li>It takes randomly an edge of this static graph and attaches a timestamp</li>
+<li>until we reach the number of edges given at the beginning</li>
+</ol>
+<p>if there is no networkx graph in parameter it will take by default the erdos renyi random graph generator to generate a linkstream
+<a class="reference external" href="https://networkx.readthedocs.io/en/stable/reference/generators.html#module-networkx.generators.random_graphs">https://networkx.readthedocs.io/en/stable/reference/generators.html#module-networkx.generators.random_graphs</a></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">ls</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">nx_complex_generator</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span><span class="n">edges</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_nx_erdos.png" src="_images/static_graph_nx_erdos.png" />
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">graph_karate</span><span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">karate_club_graph</span><span class="p">()</span>
+<span class="n">ls</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">nx_complex_generator</span><span class="p">(</span><span class="n">edges</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="n">graph</span><span class="o">=</span><span class="n">graph_karate</span><span class="p">)</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/static_graph_nx_karate.png" src="_images/static_graph_nx_karate.png" />
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">static_graph module</a><ul>
+<li><a class="reference internal" href="#module-static_graph">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#ls-flat-plot-function">Ls_flat_plot function</a></li>
+<li><a class="reference internal" href="#convert-networkx-to-linkstream-function">Convert_networkx_to_linkstream function</a></li>
+<li><a class="reference internal" href="#convert-linkstream-to-networkx-function">Convert_linkstream_to_networkx function</a></li>
+<li><a class="reference internal" href="#nx-complex-generator-function">Nx_complex_generator function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="kpi.html"
+                        title="previous chapter">kpi module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/static_graph.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="kpi.html" title="kpi module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>
