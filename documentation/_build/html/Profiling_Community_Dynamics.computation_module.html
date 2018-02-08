@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Profiling_Community_Dynamics.computation_module package &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Profiling_Community_Dynamics.visualization_module package" href="Profiling_Community_Dynamics.visualization_module.html" />
+    <link rel="prev" title="Profiling_Community_Dynamics package" href="Profiling_Community_Dynamics.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.visualization_module.html" title="Profiling_Community_Dynamics.visualization_module package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.html" title="Profiling_Community_Dynamics package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Profiling_Community_Dynamics.html" accesskey="U">Profiling_Community_Dynamics package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="profiling-community-dynamics-computation-module-package">
+<h1>Profiling_Community_Dynamics.computation_module package<a class="headerlink" href="#profiling-community-dynamics-computation-module-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-Profiling_Community_Dynamics.computation_module">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Profiling_Community_Dynamics.computation_module" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.computation_module.delta_density_list">
+<code class="descclassname">Profiling_Community_Dynamics.computation_module.</code><code class="descname">delta_density_list</code><span class="sig-paren">(</span><em>linkstream</em>, <em>delta_list</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.computation_module.delta_density_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute stream delta-density of community with many delta values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>delta</strong> (<em>float</em>) &#8211; Delta you would like to compute delta-density.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">list of stream delta-density.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.computation_module.links_deltadensity">
+<code class="descclassname">Profiling_Community_Dynamics.computation_module.</code><code class="descname">links_deltadensity</code><span class="sig-paren">(</span><em>linkstream</em>, <em>delta</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.computation_module.links_deltadensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute link delta-density of every possible link in linkstream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>delta</strong> (<em>float</em>) &#8211; Delta you would like to compute delta-density.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">map which key are links and value are link delta-density of each links.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.computation_module.max_deltadensity_min_delta">
+<code class="descclassname">Profiling_Community_Dynamics.computation_module.</code><code class="descname">max_deltadensity_min_delta</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.computation_module.max_deltadensity_min_delta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the smallest delta where stream delta-density is maximum and max delta-density.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">map which contains smallest delta where stream delta-density is maximum and max delta-density.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.computation_module.stream_deltadensity">
+<code class="descclassname">Profiling_Community_Dynamics.computation_module.</code><code class="descname">stream_deltadensity</code><span class="sig-paren">(</span><em>linkstream</em>, <em>delta</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.computation_module.stream_deltadensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute stream delta-density of community with one delta value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>delta</strong> (<em>float</em>) &#8211; Delta you would like to compute delta-density.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">stream delta-density of community.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="links-deltadensity-function">
+<h3>links_deltadensity function<a class="headerlink" href="#links-deltadensity-function" title="Permalink to this headline">¶</a></h3>
+<p>links_deltadensity is a function which compute the link delta-density of every possible pair of nodes.</p>
+<p>The way to use this function is</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">links_deltadensity</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and the result will show you like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nb">frozenset</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]):</span> <span class="mf">0.09523809523809523</span><span class="p">,</span>
+    <span class="nb">frozenset</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]):</span> <span class="mf">0.26190476190476186</span><span class="p">,</span>
+    <span class="nb">frozenset</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]):</span> <span class="mf">0.023809523809523836</span><span class="p">,</span>
+    <span class="nb">frozenset</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]):</span> <span class="mf">0.023809523809523836</span><span class="p">,</span>
+    <span class="nb">frozenset</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]):</span> <span class="mf">0.1428571428571429</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can specify the time of a linkstream by assign the value to parameter start_time and end_time like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">links_deltadensity</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then, the function will compute the delta-density from link which is in duration of start_time and end_time.</p>
+<p>Moreover, you can specify the community too by assign list of node id to parameter community.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">links_deltadensity</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">community</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>It will compute the delta-density from link which occur from nodes in community.</p>
+</div>
+<div class="section" id="stream-deltadensity-function">
+<h3>stream_deltadensity function<a class="headerlink" href="#stream-deltadensity-function" title="Permalink to this headline">¶</a></h3>
+<p>This function uses to compute delta-density of link stream.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">stream_deltadensity</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and it will return delta-density of linkstream</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="mf">0.08095238095238096</span>
+</pre></div>
+</div>
+<p>The same as links_deltadensity function, you can specity duration of time by assigning parameter start_time and end_time.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">stream_deltadensity</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>you can assign community which you would like to compute delta-density too.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">stream_deltadensity</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">community</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="delta-density-list-function">
+<h3>delta_density_list function<a class="headerlink" href="#delta-density-list-function" title="Permalink to this headline">¶</a></h3>
+<p>This function is like calling stream_deltadensity() several time. It computes stream delta-density with a list of delta values.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">delta_density_list</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">delta_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="n">start_time</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">community</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="max-deltadensity-min-delta-function">
+<h3>max_deltadensity_min_delta function<a class="headerlink" href="#max-deltadensity-min-delta-function" title="Permalink to this headline">¶</a></h3>
+<p>This function will find the maximum delta-density of link stream and the smallest delta where delta-density is maximum.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">max_deltadensity_min_delta</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and it will return map which contains min_delta and max_deltadensity like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;min_delta&#39;</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
+    <span class="s1">&#39;max_deltadensity&#39;</span><span class="p">:</span> <span class="mf">0.8</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can specify the community, and duration of time which you would like to consider by</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">max_deltadensity_min_delta</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">community</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Profiling_Community_Dynamics.computation_module package</a><ul>
+<li><a class="reference internal" href="#module-Profiling_Community_Dynamics.computation_module">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#links-deltadensity-function">links_deltadensity function</a></li>
+<li><a class="reference internal" href="#stream-deltadensity-function">stream_deltadensity function</a></li>
+<li><a class="reference internal" href="#delta-density-list-function">delta_density_list function</a></li>
+<li><a class="reference internal" href="#max-deltadensity-min-delta-function">max_deltadensity_min_delta function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Profiling_Community_Dynamics.html"
+                        title="previous chapter">Profiling_Community_Dynamics package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Profiling_Community_Dynamics.visualization_module.html"
+                        title="next chapter">Profiling_Community_Dynamics.visualization_module package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Profiling_Community_Dynamics.computation_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.visualization_module.html" title="Profiling_Community_Dynamics.visualization_module package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.html" title="Profiling_Community_Dynamics package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Profiling_Community_Dynamics.html" >Profiling_Community_Dynamics package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

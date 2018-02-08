@@ -1,0 +1,11 @@
+static_graph module
+====================================
+
+Module contents
+---------------
+
+.. automodule:: static_graph
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

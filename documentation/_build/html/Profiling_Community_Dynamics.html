@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Profiling_Community_Dynamics package &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Profiling_Community_Dynamics.computation_module package" href="Profiling_Community_Dynamics.computation_module.html" />
+    <link rel="prev" title="Profiling_Community_Dynamics" href="modules.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.computation_module.html" title="Profiling_Community_Dynamics.computation_module package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="Profiling_Community_Dynamics"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="profiling-community-dynamics-package">
+<h1>Profiling_Community_Dynamics package<a class="headerlink" href="#profiling-community-dynamics-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html">Profiling_Community_Dynamics.computation_module package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html#module-Profiling_Community_Dynamics.computation_module">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html#links-deltadensity-function">links_deltadensity function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html#stream-deltadensity-function">stream_deltadensity function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html#delta-density-list-function">delta_density_list function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.computation_module.html#max-deltadensity-min-delta-function">max_deltadensity_min_delta function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html">Profiling_Community_Dynamics.visualization_module package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html#module-Profiling_Community_Dynamics.visualization_module">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html#example">Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html#lsplot-function">lsplot function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html#density-plot-function">density_plot function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html#density-2nd-derivative-lsplot-function">density_2nd_derivative_lsplot function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Profiling_Community_Dynamics.visualization_module.html#max-deltadensity-min-delta-plot-function">max_deltadensity_min_delta_plot function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-Profiling_Community_Dynamics">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Profiling_Community_Dynamics" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Profiling_Community_Dynamics.LinkStream">
+<em class="property">class </em><code class="descclassname">Profiling_Community_Dynamics.</code><code class="descname">LinkStream</code><span class="sig-paren">(</span><em>data</em>, <em>column_sender='u'</em>, <em>column_receiver='v'</em>, <em>column_timestamp='t'</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.LinkStream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The class which contains Linkstream for data experiment eg. computing delta-density or visualization.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>column_sender</strong> (<em>str</em>) &#8211; A name of sender column.</li>
+<li><strong>column_receiver</strong> (<em>str</em>) &#8211; A name of receiver column.</li>
+<li><strong>column_timestamp</strong> (<em>str</em>) &#8211; A name of timestamp column.</li>
+<li><strong>data</strong> &#8211; List of tuple which contains 3 members, sender_id(int), receiver_id(int), timestamp(int).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Profiling_Community_Dynamics.LinkStream.describe">
+<code class="descname">describe</code><span class="sig-paren">(</span><em>display=True</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.LinkStream.describe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Describe the linkstream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>display</strong> &#8211; print the describing of nodes, link, timestamp, etc.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">map which contains node list, timestamp list, and time range list.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Profiling_Community_Dynamics.LinkStream.generate_communities">
+<code class="descname">generate_communities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.LinkStream.generate_communities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate every possible community of the linkstream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of tuple of nodes in each community.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.read_linkstream">
+<code class="descclassname">Profiling_Community_Dynamics.</code><code class="descname">read_linkstream</code><span class="sig-paren">(</span><em>path</em>, <em>column_sender='u'</em>, <em>column_receiver='v'</em>, <em>column_timestamp='t'</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.read_linkstream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import .csv file to LinkStream Object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> &#8211; A path of the linkstream file(.csv).</li>
+<li><strong>column_sender</strong> &#8211; A name of sender column.</li>
+<li><strong>column_receiver</strong> &#8211; A name of receiver column.</li>
+<li><strong>column_timestamp</strong> &#8211; A name of timestamp column.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A LinkStream object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-linkstream-object">
+<h3>Creating LinkStream object<a class="headerlink" href="#creating-linkstream-object" title="Permalink to this headline">¶</a></h3>
+<p>You can create the linkstream by</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">LinkStream</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)])</span>
+</pre></div>
+</div>
+<p>Inside the tuple, the element are sender_id, receiver_id, and timestamp respectively.</p>
+<p>When you create the LinkStream object by the code above, it will create the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">Pandas Dataframe</a> and set column name of sender, receiver, and timestamp as &#8216;u&#8217;, &#8216;v&#8217;, and &#8216;t&#8217;.</p>
+<p>If you would link to use a different column name, you can specify a column name like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">LinkStream</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)],</span> <span class="n">column_sender</span><span class="o">=</span><span class="s1">&#39;sender&#39;</span><span class="p">,</span>
+                <span class="n">column_receiver</span><span class="o">=</span><span class="s1">&#39;receiver&#39;</span><span class="p">,</span> <span class="n">column_timestamp</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you have the file of linkstream in CSV format, you can import your file to create LinkStream object by</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ofcourse, the default of column name is still u(sender), v(receiver), t(timestamp). you can specify the column name by the same way as creating LinkStream object.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/board/linkstream.csv&#39;</span><span class="p">,</span> <span class="n">column_sender</span><span class="o">=</span><span class="s1">&#39;authorA&#39;</span><span class="p">,</span> <span class="n">column_receiver</span><span class="o">=</span><span class="s1">&#39;authorB&#39;</span><span class="p">,</span> <span class="n">column_timestamp</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage-of-linkstream-object">
+<h3>Usage of LinkStream object<a class="headerlink" href="#usage-of-linkstream-object" title="Permalink to this headline">¶</a></h3>
+<p>You can generate every possible community in the linkstream by</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span><span class="o">.</span><span class="n">generate_communities</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>and then, it will return you a list of communities like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Inside the list, tuple refers to one community and the element inside a tuple is id of node which is in that community.</p>
+<p>In addition, you can describe the linkstream by</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>the console will show you like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Nodes</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">node</span><span class="p">:</span> <span class="mi">5</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">link</span><span class="p">:</span> <span class="mi">36</span>
+<span class="n">Timestamp</span><span class="p">:</span>
+<span class="n">count</span>    <span class="mf">24.000000</span>
+<span class="n">mean</span>     <span class="mf">23.458333</span>
+<span class="n">std</span>      <span class="mf">13.516429</span>
+<span class="nb">min</span>       <span class="mf">2.000000</span>
+<span class="mi">25</span><span class="o">%</span>      <span class="mf">10.750000</span>
+<span class="mi">50</span><span class="o">%</span>      <span class="mf">25.000000</span>
+<span class="mi">75</span><span class="o">%</span>      <span class="mf">34.250000</span>
+<span class="nb">max</span>      <span class="mf">43.000000</span>
+<span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+<span class="n">Timerange</span><span class="p">:</span>
+<span class="n">count</span>    <span class="mf">23.000000</span>
+<span class="n">mean</span>      <span class="mf">1.782609</span>
+<span class="n">std</span>       <span class="mf">0.951388</span>
+<span class="nb">min</span>       <span class="mf">1.000000</span>
+<span class="mi">25</span><span class="o">%</span>       <span class="mf">1.000000</span>
+<span class="mi">50</span><span class="o">%</span>       <span class="mf">2.000000</span>
+<span class="mi">75</span><span class="o">%</span>       <span class="mf">2.000000</span>
+<span class="nb">max</span>       <span class="mf">4.000000</span>
+<span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+</pre></div>
+</div>
+<p>and return statistic of node list, timestamp list which link is occured, and timerange between two near timestamp list.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span>
+     <span class="s1">&#39;timestamp_list&#39;</span><span class="p">:</span>
+     <span class="n">count</span>    <span class="mf">24.000000</span>
+     <span class="n">mean</span>     <span class="mf">23.458333</span>
+     <span class="n">std</span>      <span class="mf">13.516429</span>
+     <span class="nb">min</span>       <span class="mf">2.000000</span>
+     <span class="mi">25</span><span class="o">%</span>      <span class="mf">10.750000</span>
+     <span class="mi">50</span><span class="o">%</span>      <span class="mf">25.000000</span>
+     <span class="mi">75</span><span class="o">%</span>      <span class="mf">34.250000</span>
+     <span class="nb">max</span>      <span class="mf">43.000000</span>
+     <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span><span class="p">,</span>
+     <span class="s1">&#39;node_list&#39;</span><span class="p">:</span>
+     <span class="n">count</span>    <span class="mf">5.000000</span>
+     <span class="n">mean</span>     <span class="mf">3.000000</span>
+     <span class="n">std</span>      <span class="mf">1.581139</span>
+     <span class="nb">min</span>      <span class="mf">1.000000</span>
+     <span class="mi">25</span><span class="o">%</span>      <span class="mf">2.000000</span>
+     <span class="mi">50</span><span class="o">%</span>      <span class="mf">3.000000</span>
+     <span class="mi">75</span><span class="o">%</span>      <span class="mf">4.000000</span>
+     <span class="nb">max</span>      <span class="mf">5.000000</span>
+     <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span><span class="p">,</span>
+     <span class="s1">&#39;timerange_list&#39;</span><span class="p">:</span>
+     <span class="n">count</span>     <span class="mf">7.000000</span>
+     <span class="n">mean</span>      <span class="mf">2.714286</span>
+     <span class="n">std</span>      <span class="mf">10.181205</span>
+     <span class="nb">min</span>     <span class="o">-</span><span class="mf">11.516429</span>
+     <span class="mi">25</span><span class="o">%</span>      <span class="o">-</span><span class="mf">5.241786</span>
+     <span class="mi">50</span><span class="o">%</span>       <span class="mf">8.750000</span>
+     <span class="mi">75</span><span class="o">%</span>       <span class="mf">9.000000</span>
+     <span class="nb">max</span>      <span class="mf">14.250000</span>
+     <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+<p>If you do not want the console show the statistic, you can set parameter display as False.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">ls</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and it just return values.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Profiling_Community_Dynamics package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#module-Profiling_Community_Dynamics">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#creating-linkstream-object">Creating LinkStream object</a></li>
+<li><a class="reference internal" href="#usage-of-linkstream-object">Usage of LinkStream object</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">Profiling_Community_Dynamics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Profiling_Community_Dynamics.computation_module.html"
+                        title="next chapter">Profiling_Community_Dynamics.computation_module package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Profiling_Community_Dynamics.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.computation_module.html" title="Profiling_Community_Dynamics.computation_module package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="Profiling_Community_Dynamics"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

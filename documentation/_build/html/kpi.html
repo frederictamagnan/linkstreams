@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>kpi module &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="static_graph module" href="static_graph.html" />
+    <link rel="prev" title="generator module" href="generator.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="static_graph.html" title="static_graph module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="generator.html" title="generator module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="kpi-module">
+<h1>kpi module<a class="headerlink" href="#kpi-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-kpi">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-kpi" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="kpi.average_delta_timestamp">
+<code class="descclassname">kpi.</code><code class="descname">average_delta_timestamp</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#kpi.average_delta_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the average time between two edges in a slice of the linkstream defined by a start_time and a end_time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; the linkstream concerned</li>
+<li><strong>start_time</strong> &#8211; start time of the slice of the linkstream</li>
+<li><strong>end_time</strong> &#8211; end time of the slice of the linkstream</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a float, result of the compute</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="kpi.average_incident_degrees">
+<code class="descclassname">kpi.</code><code class="descname">average_incident_degrees</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#kpi.average_incident_degrees" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the mean of the incident edges on each vertex, in a slice of the linkstream defined by a start time and an end time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; the linkstream concerned</li>
+<li><strong>start_time</strong> &#8211; start time of the slice of the linkstream</li>
+<li><strong>end_time</strong> &#8211; end time of the slice of the linkstream</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a float, result of the compute</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="kpi.average_nonincident_degrees">
+<code class="descclassname">kpi.</code><code class="descname">average_nonincident_degrees</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#kpi.average_nonincident_degrees" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the mean of the nonincident edges on each vertex, edges which leave the vertex, in a slice of the linkstream defined by a start time and an end time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; the linkstream concerned</li>
+<li><strong>start_time</strong> &#8211; start time of the slice of the linkstream</li>
+<li><strong>end_time</strong> &#8211; end time of the slice of the linkstream</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a float, result of the compute</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="kpi.number_of_interactions">
+<code class="descclassname">kpi.</code><code class="descname">number_of_interactions</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#kpi.number_of_interactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute number of interactions, in a slice of the linkstream defined by a start time and an end time</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; the linkstream concerned</li>
+<li><strong>start_time</strong> &#8211; start time of the slice of the linkstream</li>
+<li><strong>end_time</strong> &#8211; end time of the slice of the linkstream</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a float, result of the compute</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="kpi.vizualisation_all_kpi">
+<code class="descclassname">kpi.</code><code class="descname">vizualisation_all_kpi</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>step=1</em>, <em>delta=10</em><span class="sig-paren">)</span><a class="headerlink" href="#kpi.vizualisation_all_kpi" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>vizualisation of the four KPI on a slice off the linkstream defined by a start_time and an end_time. Each point is the compute of the kpi on a slice with a length of delta</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>linkstream</strong> &#8211; the linkstream concerned</li>
+<li><strong>start_time</strong> &#8211; start time of the slice of the linkstream</li>
+<li><strong>end_time</strong> &#8211; end time of the slice of the linkstream</li>
+<li><strong>step</strong> &#8211; step of computing, time between each point</li>
+<li><strong>delta</strong> &#8211; length of the portion of linkstream the compute will be done on</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>:return : returns nothing but plot the evolution</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="kpi.vizualisation_kpi">
+<code class="descclassname">kpi.</code><code class="descname">vizualisation_kpi</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>func=&lt;function number_of_interactions&gt;</em>, <em>step=1</em>, <em>delta=10</em><span class="sig-paren">)</span><a class="headerlink" href="#kpi.vizualisation_kpi" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>vizualisation of the evolution of a kpi on a slice of the linkstream defined by a start_time and an end_time. Each point is the compute of the kpi on a slice with a length of delta</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>linkstream</strong> &#8211; the linkstream concerned</li>
+<li><strong>start_time</strong> &#8211; start time of the slice of the linkstream</li>
+<li><strong>end_time</strong> &#8211; end time of the slice of the linkstream</li>
+<li><strong>func</strong> &#8211; the kpi to vizualise</li>
+<li><strong>step</strong> &#8211; step of computing, time between each point</li>
+<li><strong>delta</strong> &#8211; length of the portion of linkstream the compute will be done on</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>:return : returns nothing but plot the evolution</p>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-linkstream-object">
+<h3>Creating LinkStream object<a class="headerlink" href="#creating-linkstream-object" title="Permalink to this headline">¶</a></h3>
+<p>first we create a linkstream with</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/kpi_linkstream.png" src="_images/kpi_linkstream.png" />
+</div>
+<div class="section" id="computation-of-a-kpi">
+<h3>Computation of a kpi<a class="headerlink" href="#computation-of-a-kpi" title="Permalink to this headline">¶</a></h3>
+<p>then we compute a kpi</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="n">pcd</span><span class="o">.</span><span class="n">number_of_interactions</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dashboard-summary-of-all-kpis">
+<h3>Dashboard - summary of all kpis<a class="headerlink" href="#dashboard-summary-of-all-kpis" title="Permalink to this headline">¶</a></h3>
+<p>then we can plot a dashboard of a linkstream</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">vizualisation_all_kpi</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>and the result is</p>
+<img alt="_images/kpi_dashboard.png" src="_images/kpi_dashboard.png" />
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">kpi module</a><ul>
+<li><a class="reference internal" href="#module-kpi">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#creating-linkstream-object">Creating LinkStream object</a></li>
+<li><a class="reference internal" href="#computation-of-a-kpi">Computation of a kpi</a></li>
+<li><a class="reference internal" href="#dashboard-summary-of-all-kpis">Dashboard - summary of all kpis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="generator.html"
+                        title="previous chapter">generator module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="static_graph.html"
+                        title="next chapter">static_graph module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/kpi.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="static_graph.html" title="static_graph module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="generator.html" title="generator module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

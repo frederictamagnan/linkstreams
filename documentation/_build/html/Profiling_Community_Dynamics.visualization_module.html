@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Profiling_Community_Dynamics.visualization_module package &#8212; Profiling Community Dynamics 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Entropy module" href="Entropy.html" />
+    <link rel="prev" title="Profiling_Community_Dynamics.computation_module package" href="Profiling_Community_Dynamics.computation_module.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Entropy.html" title="Entropy module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.computation_module.html" title="Profiling_Community_Dynamics.computation_module package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Profiling_Community_Dynamics.html" accesskey="U">Profiling_Community_Dynamics package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="profiling-community-dynamics-visualization-module-package">
+<h1>Profiling_Community_Dynamics.visualization_module package<a class="headerlink" href="#profiling-community-dynamics-visualization-module-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-Profiling_Community_Dynamics.visualization_module">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Profiling_Community_Dynamics.visualization_module" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.visualization_module.density_2nd_derivative_lsplot">
+<code class="descclassname">Profiling_Community_Dynamics.visualization_module.</code><code class="descname">density_2nd_derivative_lsplot</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_delta=None</em>, <em>end_delta=None</em>, <em>step=1</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.visualization_module.density_2nd_derivative_lsplot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the evolution of deltadensity according to delta, second derivative of deltadensity, and linkstream in one figure.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>start_delta</strong> (<em>float</em>) &#8211; Start delta you would like to compute.</li>
+<li><strong>end_delta</strong> (<em>float</em>) &#8211; Start delta you would like to compute.</li>
+<li><strong>floatstep</strong> &#8211; step of rising of delta.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><p class="first last">list of axes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.visualization_module.density_plot">
+<code class="descclassname">Profiling_Community_Dynamics.visualization_module.</code><code class="descname">density_plot</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_delta=None</em>, <em>end_delta=None</em>, <em>step=1</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.visualization_module.density_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the evolution of deltadensity according to delta.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>start_delta</strong> (<em>float</em>) &#8211; Start delta you would like to compute.</li>
+<li><strong>end_delta</strong> (<em>float</em>) &#8211; Start delta you would like to compute.</li>
+<li><strong>floatstep</strong> &#8211; step of rising of delta.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">axes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.visualization_module.lsplot">
+<code class="descclassname">Profiling_Community_Dynamics.visualization_module.</code><code class="descname">lsplot</code><span class="sig-paren">(</span><em>linkstream</em>, <em>start_time=None</em>, <em>end_time=None</em>, <em>community=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.visualization_module.lsplot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the linkstream.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; A Linkstream object.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+<li><strong>community</strong> &#8211; list of node id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">axes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Profiling_Community_Dynamics.visualization_module.max_deltadensity_min_delta_plot">
+<code class="descclassname">Profiling_Community_Dynamics.visualization_module.</code><code class="descname">max_deltadensity_min_delta_plot</code><span class="sig-paren">(</span><em>linkstream</em>, <em>communities</em>, <em>start_time=None</em>, <em>end_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Profiling_Community_Dynamics.visualization_module.max_deltadensity_min_delta_plot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>linkstream</strong> &#8211; Linkstream object.</li>
+<li><strong>communities</strong> &#8211; List of community.</li>
+<li><strong>start_time</strong> (<em>int</em>) &#8211; Start timestamp.</li>
+<li><strong>end_time</strong> (<em>int</em>) &#8211; Last timestamp.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">axes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lsplot-function">
+<h3>lsplot function<a class="headerlink" href="#lsplot-function" title="Permalink to this headline">¶</a></h3>
+<p>lsplot() is a function which visualizes a linkstream. X-axis is timestamp
+and Y-axis is node id. You can plot a linkstream by</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Profiling_Community_Dynamics</span> <span class="kn">as</span> <span class="nn">pcd</span>
+
+<span class="n">ls</span> <span class="o">=</span> <span class="n">pcd</span><span class="o">.</span><span class="n">read_linkstream</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./data/example/linkstream.csv&#39;</span><span class="p">)</span>
+
+<span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and the result is</p>
+<img alt="_images/lsplot_basic.png" src="_images/lsplot_basic.png" />
+<p>You can specify the time of a linkstream by assign the value to parameter start_time and end_time like this</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then, X-axis is fit start_time and end_time like this</p>
+<img alt="_images/lsplot_specific_time.png" src="_images/lsplot_specific_time.png" />
+<p>Moreover, you can specify the community too by assign list of node id to parameter community.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">community</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>It plot only link which is occured between node in parameter community.</p>
+<img alt="_images/lsplot_specific_community.png" src="_images/lsplot_specific_community.png" />
+</div>
+<div class="section" id="density-plot-function">
+<h3>density_plot function<a class="headerlink" href="#density-plot-function" title="Permalink to this headline">¶</a></h3>
+<p>densityplot() is a function which visualizes the evolution of delta-density according to delta.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">density_plot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>X-axis is delta and Y-axis is delta-density. And, delta rises from 0 to whole time range of linkstream.</p>
+<img alt="_images/density_plot_basic.png" src="_images/density_plot_basic.png" />
+<p>If you would like to specify start delta and end delta, you can assign parameter start_delta and end_delta.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">density_plot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">start_delta</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">end_delta</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/density_plot_specific_delta.png" src="_images/density_plot_specific_delta.png" />
+<p>By default, whole time range of linkstream is the timestamp of last link occured in linkstream (minus zero). Although, you can assign the whole time range of linkstream by assigning parameter start_time and end_time.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">density_plot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">start_time</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">end_time</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/density_plot_specific_time.png" src="_images/density_plot_specific_time.png" />
+<p>The same as lsplot, you can identify community which you would like to consider in parameter community.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">density_plot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">community</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<img alt="_images/density_plot_specific_community.png" src="_images/density_plot_specific_community.png" />
+</div>
+<div class="section" id="density-2nd-derivative-lsplot-function">
+<h3>density_2nd_derivative_lsplot function<a class="headerlink" href="#density-2nd-derivative-lsplot-function" title="Permalink to this headline">¶</a></h3>
+<p>This function creates the figure which consists of the evolution of delta-density according to delta, second derivative of delta-density, and linkstream plot.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">density_2nd_derivative_lsplot</span><span class="p">(</span><span class="n">ls</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/density_2nd_derivative_lsplot_basic.png" src="_images/density_2nd_derivative_lsplot_basic.png" />
+<p>Setting parameter is like lsplot() and density_plot().</p>
+</div>
+<div class="section" id="max-deltadensity-min-delta-plot-function">
+<h3>max_deltadensity_min_delta_plot function<a class="headerlink" href="#max-deltadensity-min-delta-plot-function" title="Permalink to this headline">¶</a></h3>
+<p>The function creates the figure which X-axis refers to smallest delta where delta-density is maximum and Y-axis refers to the maximum delta-density of linkstream.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pcd</span><span class="o">.</span><span class="n">max_deltadensity_min_delta_plot</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">communities</span><span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)])</span>
+</pre></div>
+</div>
+<img alt="_images/max_deltadensity_min_delta_plot.png" src="_images/max_deltadensity_min_delta_plot.png" />
+<p>This function also has parameter start_time and end_time and the way to use it is the same as lsplot(), density_plot(), and density_2nd_derivative_lsplot().</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Profiling_Community_Dynamics.visualization_module package</a><ul>
+<li><a class="reference internal" href="#module-Profiling_Community_Dynamics.visualization_module">Module contents</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#lsplot-function">lsplot function</a></li>
+<li><a class="reference internal" href="#density-plot-function">density_plot function</a></li>
+<li><a class="reference internal" href="#density-2nd-derivative-lsplot-function">density_2nd_derivative_lsplot function</a></li>
+<li><a class="reference internal" href="#max-deltadensity-min-delta-plot-function">max_deltadensity_min_delta_plot function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Profiling_Community_Dynamics.computation_module.html"
+                        title="previous chapter">Profiling_Community_Dynamics.computation_module package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Entropy.html"
+                        title="next chapter">Entropy module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Profiling_Community_Dynamics.visualization_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Entropy.html" title="Entropy module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Profiling_Community_Dynamics.computation_module.html" title="Profiling_Community_Dynamics.computation_module package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Profiling Community Dynamics 1.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Profiling_Community_Dynamics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Profiling_Community_Dynamics.html" >Profiling_Community_Dynamics package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Patipol Chiammunchit.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>
